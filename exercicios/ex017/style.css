@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+body{background-image: linear-gradient(to right, #cfe8fa71, #cdfbe675);}
+
+h1 {color: #3C3FBB; text-align: left; font-family: 'Tektur' , 'Wellfleet' ; font-size: 2em;}
+h1#principal{color: #3C3FBB; text-align: center; font-family: 'VT323' , 'Wellfleet' ; font-size: 3em;}
+h2 {color: #26B976; text-align: left; font-family: 'Wellfleet', monospace; }
+.basico {color: #198353; text-align: left; font-family: 'Wellfleet', monospace; }
+p  {color: #2C78AE; text-align: justify; text-indent: 20px; font-family: monospace; font-size: 2em; }
+.intermediario {color: rgb(33, 114, 17); font-weight: bold;}
+.destaque {background-color: rgba(255, 255, 0, 0.411);}

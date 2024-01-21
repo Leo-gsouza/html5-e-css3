@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a { text-decoration: none; color: brown; font-weight: bold;}
+
+        a:visited {color: blue;}
+
+        a:hover {color: black;text-decoration: underline;}
+
+        a:active{color: yellow;}
+
+        a::after{content: ' ►';font-weight: normal;font-size: 1em;color: darkblue;text-decoration: none;}
+
+        .especial::before {content: '◄';text-decoration: none;color: darkred}
+
+        .especial{font-size: 1.3em;}
+
+        .especial:visited{color: darkred;}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ol>
+        <li><a href="https://github.com/gustavoguanabara/html-css" target="_blank" rel="external">repositorio github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/" target="_blank" rel="external" class="especial">Site do curso em video</a></li>
+        <li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" rel="external" class="especial">Simbolos HTML5</a></li>
+    </ol>
+</body>
+</html>

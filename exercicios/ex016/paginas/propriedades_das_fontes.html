@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Propriedades das fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+        body{font-size: 1em;}
+        h1{font-family: 'Playpen Sans', cursive;}
+        h2{font-family: 'Rubik Mono One', monospace;}
+    </style>
+</head>
+<body>
+    <main>
+        <button><a href="../cores.html">voltar</a></button>
+        <h1>Tamanho de fontes</h1>
+        <p>Dicas: Não exagere na quantidade de fontes - Normalmente temos 3 tipos de fontes. Uma para grande titulos outra para destaque e uma fonte normal. 3 ou 4 familia de fontes</p>
+        <h2>medidas absolutas</h2>
+        <ol>
+            <li>centimetro <strong>cm</strong></li>
+            <li>milimetro <strong>mm</strong></li>
+            <li>polegada <strong>in</strong></li>
+            <li>pixel <mark>px</mark> - complicado trabalhar porque tem dispositivos com tela de retina que usa 1/4 de pixel </li>
+            <li>ponto <strong>pt</strong> - não recomendado - medida usada no word</li>
+            <li>paica <strong>pc</strong> - não recomendado</li>
+        </ol>
+        <h2>medidas relativas</h2>
+        <ol>
+            <li>relativa ao tamanho atual da fonte <mark>em</mark> - Altura M - Será a mais utilizada</li>
+            <li>relativa ao tamanho atual da fonte <strong>ex</strong> - Altura X</li>
+            <li>relativa a fonte que está configurada no body <strong>rem</strong> </li>
+            <li>relativa a largura da view port <strong>vw</strong> - largura da tela</li>
+            <li>relativa a largura da view port <strong>vh</strong> - altura da tela</li>
+            <li>relativa a largura da view port <strong>%</strong> - altura da tela</li>
+        </ol>
+        <h2>Informações</h2>
+        <p>16 pixel geralmente é 1em</p>
+        <p>Use px ou em </p>
+        <p>1em é o tamanho normalmente da letra </p>
+
+        <h1>Peso da fonte</h1>
+        <p>para peso é usado <strong>font-weight:</strong></p>
+        <ol>
+            <li>lighter</li>
+            <li>normal</li>
+            <li>bold</li>
+            <li>bolder</li>
+            <li>100 - 900</li>
+        </ol>
+        <h2>Italico</h2>
+        <p>font-style: italic</p>
+        <h2>underline</h2>
+        <p>text-decoration: underline</p>
+        <p>Nem todas as fontes tem todas essas posibilidades </p>
+        <h1>Usando shorthand para fonte</h1>
+        <p>shorthand vai condensar as declarações mais usadas em uma unica declaração</p>
+        <p>As declarações mais usadas para fonte são font-family, font-weight, font-size e font-style. Para condensalas basta seguir a ordem a seguir » <strong>STYLE - WEIGHT - SIZE - FAMILY</strong>. A declaração vai ficar assim: <br><strong>font: italic bolder 1em 'work sans',sans-serif;</strong></br>   </.p>
+        <ol>
+            <li>Sempre seguir a ordem</li>
+            <li>Não é necessaria preencher todas as declarações</li>
+            <li>shorthand pode ser aplicado com outras declarações sem ser font</li>
+        </ol>
+        <h1>Fontes com google fonts</h1>
+        <p>Acessar o <a href="https://fonts.google.com/" target="_blank" rel="external">site</a></p>
+        <ol>
+            <li>Baixar a font</li>
+            <li>Incorporar a font » Embed » @Import » Pegar o código da familia</li>
+        </ol>
+        <img src="../jpeg/f0.JPG" alt="imagem flexivel">
+        <img src="../jpeg/f1.JPG" alt="imagem flexivel">
+        <img src="../jpeg/f2.JPG" alt="imagem flexivel">
+        <h1>Encontrar fontes</h1>
+        <h2>Alguns sites de fontes</h2>
+        <ol>
+            <li>Dafont » <a href="https://www.dafont.com/pt/alpha.php?lettre=j" target="_blank" rel="external">clique aqui</a></li>
+        </ol>
+        <h2>Passo a passo</h2>
+        <ol>
+            <li>Baixar a fonte e descompactar</li>
+            <li>Mover o arquivo para a pasta do site - A font ficara no servidor</li>
+            <li>Em HEAD » STYLE » criar um @font-face{<br>font-family: 'dê um nome' ;</br>src: url('nome da font igualzinho incluindo o .??? ') format(tipo do formato)}</li>
+            <li>tipo dos formatos:</li>
+            <ol>
+                <li>opentype » OTF</li>
+                <li>truetype » TTF</li>
+                <li>embedded » opentype</li>
+                <li>truetype-aat » Apple advanced Typography</li>
+                <li>svg</li>
+            </ol>
+        </ol>
+        <h1>Capturando fontes dos sites</h1>
+        <p>baixar a extensão fontes <a href="https://chromewebstore.google.com/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-br">ninjas</a></p>
+        <h1>Capturar fontes dentro de imagens</h1>
+        <p>site para detectar fonte dentro de imagens</p>
+        <ol>
+            <li>whats font is » <a href="https://www.whatfontis.com/" target="_blank" rel="external">clique aqui</a></li>
+            <li>Font squirrel » <a href="https://www.fontsquirrel.com/" target="_blank" rel="external">clique aqui</a></li>
+            <li>My fonts » <a href="https://www.myfonts.com/" target="_blank" rel="external">clique aqui</a></li>
+        </ol>
+
+    </main>
+</body>
+</html>

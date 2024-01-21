@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML </title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou 
+        simplismente aumente e deminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzir Audio</h1>
+    <p>vamos aprender a reproduzir audio</p>
+    <audio src="midia/CAVERNS - Density & Time.mp3" controls autoplay></audio>
+    <!--Compativel com MP3 WAV OGG-->
+    <!--Evitar arquivos wav, pois são muito pesados-->
+    <!--preload tem 3 parametros » auto - metadata - none-->
+    <!--Auto »  é perigoso, pois o site será conseiderado carregado só depois de carregar o arquivo de audio-->
+    <!--Metadado » Só carrega as informações do arquivo-->
+    <!--None » Só carrega depois do ussuario clicar-->
+    <!--loop faz com que a musica repita-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/CAVERNS - Density & Time.mp3" type="audio/mpeg">
+        <source src="midia/CAVERNS - Density & Time.mp3" type="audio/ogg">
+        <source src="midia/CAVERNS - Density & Time.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzie aúdio, <a href="midia/CAVERNS - Density & Time.mp3">clique aqui</a> para baixar o audio</p>
+    </audio> 
+</body>
+</html>

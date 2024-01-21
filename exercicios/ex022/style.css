@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+header {
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    color: rgb(0, 0, 0); 
+}
+
+nav {
+    background-color: darksalmon;
+    text-decoration: none;
+    padding: 6px;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.452);
+    margin: 0px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 50px;
+    padding: 0px;
+}
+
+nav > a:hover {
+    color: rgb(229, 255, 0);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(63, 66, 66);
+    font-family: monospace;
+    font-size: 1em;
+    margin: 0px;
+}
+
+main {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 7px;
+}
+
+section > h1 {
+    text-align: center;
+    color: dimgray;
+    padding: 5px;
+    border: 15px solid black;
+    border-image-source: url(natal.png);
+    border-image-slice: 461;
+    border-image-repeat: repeat;
+}
+
+article {
+    background-color: rgb(178, 183, 187);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px 0px;
+
+}
+
+article > p {
+    text-indent: 10px;
+}
+
+aside {
+    background-color: rgb(107, 106, 106);
+    color: yellow;
+    padding: 5px 15px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.514);
+}
+
+aside > p {
+    margin: 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin: 0px;
+    text-align: center;
+
+}
+footer > p {
+    margin: 0px;
+}
+
