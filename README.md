@@ -3,4 +3,4 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositorios
 
-https://leo-gsouza.github.io/html5-e-css3/exercicios/ex016/cores.html
+<a href="https://leo-gsouza.github.io/html5-e-css3/exercicios/ex016/cores.html">Exercicios cores</a>
