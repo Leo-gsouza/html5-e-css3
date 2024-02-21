@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --fonte1: "Kode Mono", monospace;
+    --fonte2: "Oswald", sans-serif;
+    --fonte3: "Fredoka", sans-serif;
+}
+
+
+html, body{
+    font-family: var(--fonte2);
+    font-size: 1em;
+    background: black url('jpeg/mapa.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+table{
+    width: 800px;
+    min-width: 300px;
+    margin: auto;
+    border-collapse: collapse;
+    position: relative;
+}
+
+caption{
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+thead, tfoot{
+    color: white;
+    background-color: darkslategray;
+    font-size: 0.8em;
+
+}
+
+tbody{
+    background-color: rgb(215, 250, 241);
+    font-size: 0.7em;
+    box-shadow: 0px 0px 8px white;
+}
+ /*------------------Efeito Zebrado-----------------------*/
+tr:nth-child(2n){
+    background-color: rgb(185, 231, 225);
+}
+/*------------------Colar cabeçalho-----------------------*/
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: darkslategray;
+}
+
+th, td{
+    font-family: var(--fonte3);
+    font-weight: normal;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
