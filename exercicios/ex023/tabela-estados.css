@@ -48,6 +48,7 @@ tbody{
  /*------------------Efeito Zebrado-----------------------*/
 tr:nth-child(2n){
     background-color: rgb(185, 231, 225);
+    
 }
 /*------------------Colar cabeçalho-----------------------*/
 thead > tr > th{
