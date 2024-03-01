@@ -1,0 +1,30 @@
+**** Código javascrip **********************************************************************************
+<a href="#" onclick="clicou()"><img src="bm.jpg" alt=""></a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>a ta zé ruela</p> <audio src="ata.wav" autoplay></audio>'
+        }
+    </script>
+
+*** Colocar videos resposivos***************************************************************************
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="INSERIR LINK DO VIDEO" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+
+*** Tabela zebrada *************************************************************************************
+tr:nth-child(2n)
+
+****Grupo de colunas
+    <style>
+        col.pos{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>     
+
+    <table>
+        <colgroup>
+            <col class="pos">
+            <col class="est">
+        </colgroup>

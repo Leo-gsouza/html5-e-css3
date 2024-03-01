@@ -51,6 +51,7 @@ tr:nth-child(2n){
     
 }
 /*------------------Colar cabeçalho-----------------------*/
+/* A tag TABLE precisa receber a position RELATIVE*/
 thead > tr > th{
     position: sticky;
     top: -1px;

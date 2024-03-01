@@ -23,28 +23,70 @@
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos ea sunt, harum quaerat a fugit dolorum, vel consequuntur possimus illo voluptas similique officia voluptatibus velit enim quod labore nostrum!Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati saepe perspiciatis dolore itaque fugit ad eaque, perferendis aliquid eum minima animi tempore nisi quaerat exercitationem? Possimus in nam eum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos ea sunt, harum quaerat a fugit dolorum, vel consequuntur possimus illo voluptas similique officia voluptatibus velit enim quod labore nostrum!Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati saepe perspiciatis dolore itaque fugit ad eaque, perferendis aliquid eum minima animi tempore nisi quaerat exercitationem? Possimus in nam eum!</p>
-
+    <p>iframe com uma pagina fixa</p>
     <iframe src="pag001.html" frameborder="0" width="500px">
         <p class="erro">Infelizmente seu navegador não é compativel com iframe</p>
     </iframe>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptates similique consequatur labore obcaecati, iure ducimus rem accusamus corrupti sit incidunt dolor quia reiciendis in laboriosam neque quae tempora esse?</p>
 
     <h1>links</h1>
+    <p>usando links de paginas que serão visualidas no iframe com NAME. Usando o SRCDOC para preencher com HTML o iframe.</p>
     <ul>
         <li><a href="pag001.html" target="frame">pagina 01</a></li>
         <li><a href="pag002.html" target="frame">pagina 02</a></li>
         <li><a href="pag003.html" target="frame">pagina 03</a></li>
     </ul>
 
-
-    
     <iframe srcdoc="<h1>SRCDOC</h1><p>Usando srcdoc para preencher o frame vazio</p> " frameborder="0" name="frame"></iframe>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos ea sunt, harum quaerat a fugit dolorum, vel consequuntur possimus illo voluptas similique officia voluptatibus velit enim quod labore nostrum!Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati saepe perspiciatis dolore itaque fugit ad eaque, perferendis aliquid eum minima animi tempore nisi quaerat exercitationem? Possimus in nam eum!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos ea sunt, harum quaerat a fugit dolorum, vel consequuntur possimus illo voluptas similique officia voluptatibus velit enim quod labore nostrum!Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati saepe perspiciatis dolore itaque fugit ad eaque, perferendis aliquid eum minima animi tempore nisi quaerat exercitationem? Possimus in nam eum!</p>
+
+    <h1>Dicas iframe</h1>
+    <ol>
+        <li>Iframe não é o frame usado no HTML anterior</li>
+        <li>Iframe não é horrivel e nem perfeito</li>
+        <li>O google boot talvez não consiga entrar nos iframes </li>
+        <li>Problemas com acessibilidade - pessoas cegas </li>
+        <li>Problemas com usabilidade - Pode deixar as pessoas confusas</li>
+        <li>Problemas com usabilidade - problema com o target e responsividade</li>
+        <li>Problemas com segurança - Quando vc coloca uma pagina no iframe vc está abrindo uma porta</li>
+    </ol>
+
+    <h1>Tornar o iframe mais seguro</h1>
+    <h2>cadastre-se aqui</h2>
+    <form action="cadastro.php" method="get">
+        <p>
+            Nome:
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="Cadastrar">
+        </p>
+    </form>
+    <iframe src="pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+    <h2>sandbox e referrerpolicy</h2>
+    <p>Usando sandobox="sandbox" você protege que outros sites consigam coletar informações fornecidas </p>
+    <p>Usando o referrerpolicy="no-referrer" O que está dentro do iframe não vai coletar nenhum dado do cliente</p>
+    <p>recomendado usar os dois sandbox e referrerpolicy</p>
+    <p>caso deseje que o usuario digite dados no iframe tem que usar uma segurança com nivel inferior do sandbox que é allow-same-origin allow-forms allow-script, com isso é permitido mesma origem, formularios e scripts</p>
+    <h1>javascript</h1>
+    <a href="pag005.html">pagina 5</a>
+
+    <iframe src="pag005.html" referrerpolicy="no-referrer sandbox="allow-script"></iframe>
+
+    <p>Não coloque qualquer site dentro do iframe do seu site. Não abra a porta para qualquer pessoa</p>
+
+    <h2>video do vimeo no iframe</h2>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/282810099?h=35b6bb2a7a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    
+
+    
+    <h2>Google Maps</h2>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.1877406879476!2d-47.444375725716654!3d-23.489746358963068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf601b1d20727f%3A0x6410532627e7d5ea!2sAtacad%C3%A3o%20-%20Dom%20Aguirre!5e0!3m2!1spt-BR!2sbr!4v1709203348864!5m2!1spt-BR!2sbr"style="position:absolute;top:0;left:0;width:100%;height:100%; frameborder="0";" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    <h2>Waze</h2>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-23.451780&lon=-47.479020&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+
 
 </body>
 </html>

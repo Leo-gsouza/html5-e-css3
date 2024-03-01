@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando colgroup</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+    
+        }
+
+        thead > tr > th {
+            font-variant: small-caps;
+            font-size: 1em;
+            background-color: blueviolet;
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+
+        col.cnome{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+        </colgroup>
+        <caption>tabela  de cadastro</caption>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>idade</th>
+                <th>sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Leo</td>
+                <td>35</td>
+                <td>masculino</td>
+            </tr>
+            <tr>
+                <td>Natalia</td>
+                <td>30</td>
+                <td>feminino</td>
+            </tr>
+            <tr>
+                <td>Cleber</td>
+                <td>51</td>
+                <td>masculino</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
