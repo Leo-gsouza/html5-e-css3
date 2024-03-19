@@ -10,24 +10,17 @@
         body{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-
         iframe{
             width: 80%;
             box-shadow: 0px 0px 10px black;
-        }
-
-        .erro{
-            background-color: black;
-            color: white;
         }
     </style>
 </head>
 <body>
     <p>iframe com uma pagina fixa</p>
     <iframe src="pag001.html" frameborder="0" width="500px">
-        <p class="erro">Infelizmente seu navegador não é compativel com iframe</p>
+        Infelizmente seu navegador não é compativel com iframe
     </iframe>
-
 
     <h1>links</h1>
     <p>usando links de paginas que serão visualidas no iframe com NAME. Usando o SRCDOC para preencher com HTML o iframe.</p>
@@ -38,10 +31,6 @@
     </ul>
 
     <iframe srcdoc="<h1>SRCDOC</h1><p>Usando srcdoc para preencher o frame vazio</p> " frameborder="0" name="frame"></iframe>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos ea sunt, harum quaerat a fugit dolorum, vel consequuntur possimus illo voluptas similique officia voluptatibus velit enim quod labore nostrum!Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati saepe perspiciatis dolore itaque fugit ad eaque, perferendis aliquid eum minima animi tempore nisi quaerat exercitationem? Possimus in nam eum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos ea sunt, harum quaerat a fugit dolorum, vel consequuntur possimus illo voluptas similique officia voluptatibus velit enim quod labore nostrum!Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati saepe perspiciatis dolore itaque fugit ad eaque, perferendis aliquid eum minima animi tempore nisi quaerat exercitationem? Possimus in nam eum!</p>
-
     <h1>Dicas iframe</h1>
     <ol>
         <li>Iframe não é o frame usado no HTML anterior</li>
@@ -63,11 +52,12 @@
         </p>
     </form>
     <iframe src="pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
     <h2>sandbox e referrerpolicy</h2>
     <p>Usando sandobox="sandbox" você protege que outros sites consigam coletar informações fornecidas </p>
     <p>Usando o referrerpolicy="no-referrer" O que está dentro do iframe não vai coletar nenhum dado do cliente</p>
     <p>recomendado usar os dois sandbox e referrerpolicy</p>
-    <p>caso deseje que o usuario digite dados no iframe tem que usar uma segurança com nivel inferior do sandbox que é allow-same-origin allow-forms allow-script, com isso é permitido mesma origem, formularios e scripts</p>
+    <p>caso deseje que o usuario digite dados no iframe tem que usar uma segurança com nivel inferior do sandbox que é allow-same-origin allow-forms allow-script, com isso é permitido dados da mesma origem, formularios e scripts</p>
     <h1>javascript</h1>
     <a href="pag005.html">pagina 5</a>
 
